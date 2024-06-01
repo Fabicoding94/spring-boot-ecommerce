@@ -1,0 +1,9 @@
+Postman ci serve per testare le API, in questo caso andiamo a vedere se effettivamente ci è consentito
+di usare solo il method GET e che gli altri http methods siano disabilitati
+
+GET http://localhost:9090/api/products
+
+Per gli altri metodi riceveremo la risposta "405 Method not allowed".
+Esempio:
+POST http://localhost:9090/api/products
+e inserendo un JSON per inserire dati

@@ -1,0 +1,2 @@
+Dentro al package dao andiamo a creare le Repositories, una per ciascuna Entity.
+Ciascuna Repository estenderà la JPARepository<*nomeEntity*, *typeIdEntity*>

@@ -1,0 +1,11 @@
+How can we Able just the GET Api?
+Usiamo SPRING DATA REST , ma ricordandoci di disabilitare le Post, Put e Delete nella Configurazione.
+Nella classe "MyDatRestConfig" noi andiamo a configurare le nostre API REST , disabilitando i metodi HTTP Post,
+Put e Delete.
+
+It DISABLE the HTTP Methods for POST, PUT, DELETE.
+We will need also the REST API Security, which we will see later.
+
+In questa classe troviamo la sintassi di Java Lambda Syntax, ad es. espressa con le frecce.
+
+@Configuration

@@ -1,0 +1,5 @@
+
+Se avviamo l'applicazione e andiamo su http://localhost:9090/api/ (9090 è la porta che
+ho inserito nelle application.properties)  troviamo i dati del backend.
+http://localhost:9090/api/product -> troviamo i prodotti del DB
+http://localhost:9090/api/product-category -> troviamo le product categories del DB

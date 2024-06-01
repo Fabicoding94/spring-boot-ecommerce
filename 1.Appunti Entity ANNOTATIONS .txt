@@ -1,0 +1,30 @@
+application.properties -> contiene il collegamento al DB
+
+JPA Entities- How to create an Entity
+Annotations
+@Entity -> (JAKARTA PERSISTANCE ANNOTATION) genera una entità; fa parte della libreria di Java Persistance.
+@Table(name="nameOfTheEntity") ->(JAKARTA PERSISTANCE ANNOTATION) permette il collegamento con la rispettiva tabella del DB
+@Data -> (LOMBOK ANNOTATION) richama libreria di Lombok, quindi non servirà esplicitare i getters e setters (permette di
+eliminare il boilerplate, ovvero codice ridondante) perchè li genera aumìtomaticamente dietro le scene.
+
+@Getter and @Setter ->  (LOMBOK ANNOTATION) annotazioni di Lombok che generano i getters e setterrs dietrio le
+quinte, che venivano usate prima che venisse introdotta l'annotation @Data
+
+-It is necessary to attribute an ID
+Annotations for (upon) the ID value:
+@Id -> (JAKARTA PERSISTANCE ANNOTATION)
+@GeneratedValue(strategy = GenerationType.IDENTITY) -> (JAKARTA PERSISTANCE ANNOTATION)
+@Column(name = "id", nullable = false) -> (JAKARTA PERSISTANCE ANNOTATION)
+
+@Column -> upon each property of the Entity to associate the column name in the DB
+
+@CreationTimestamp -> (IBERNATE ANNOTATION) Hibernate will automatically manage the timestamps
+@UpdateTimestamp -> (IBERNATE ANNOTATION) Hibernate will update the date in the background for you
+
+@OneToMany -> (JAKARTA PERSISTANCE ANNOTATION) example one category to many products
+@ManyToOne -> (JAKARTA PERSISTANCE ANNOTATION) example many products to one category
+@JoinColumn(name = "category_id") -> (JAKARTA PERSISTANCE ANNOTATION) it goes under @ManyToOne
+
+
+@Configuration -> (SPRINGFRAMEWORK ANNOTATION) la usiamo nella classe di configurazione delle Rest Api, ovvero
+MyDataRestConfig che si trova dentro al package config.

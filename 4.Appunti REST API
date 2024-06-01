@@ -1,0 +1,22 @@
+
+Spring Data Rest will expose ALL this "ENDPOINT" for free!
+
+CRUD Operations:
+
+POST/products               -> Create a product
+GET/products                -> Read ALL product
+GET/products/{id}           -> Read a specific product
+PUT/products/{id}           -> Update a specific product
+DELETE/products/{id}        -> Delete a specific product
+
+We don't want anyone on the outside could add or delete or update some product, but that they can Read-only!
+So we need to DISABLE -> Post, Put, Delete
+and just ABLE -> Get
+
+How can we Able just the GET Api?
+Usiamo SPRING DATA REST , ma ricordandoci di disabilitare le Post, Put e Delete nella Configurazione.
+Nella classe "MyDatRestConfig" noi andiamo a configurare le nostre API REST , disabilitando i metodi HTTP Post,
+Put e Delete.
+
+It DISABLE the HTTP Methods for POST, PUT, DELETE.
+We will need also the REST API Security, which we will see later.

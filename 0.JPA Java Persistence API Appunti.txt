@@ -1,0 +1,19 @@
+
+JPA, o Java Persistence API, è uno strumento utilizzato nello sviluppo di applicazioni Java per
+gestire i dati nel database. Ti permette di scrivere codice Java che interagisce con il database
+senza dover scrivere SQL direttamente. In pratica, puoi definire oggetti Java che rappresentano
+i dati nel tuo database, e JPA si occupa di mapparli in modo trasparente.
+Questo semplifica lo sviluppo dell'applicazione e la rende più portatile tra diversi tipi di database.
+
+
+JPA sta per Java Persistence API. È una specifica Java che descrive come gestire i dati persistenti
+in un'applicazione Java. JPA fornisce un'interfaccia di programmazione che permette agli sviluppatori
+di definire oggetti Java che mappano i dati del database relazionale. Questo permette agli sviluppatori
+di scrivere codice orientato agli oggetti anziché SQL per interagire con il database, facilitando
+lo sviluppo e migliorando la portabilità del codice tra differenti database. JPA è spesso utilizzato
+insieme a framework ORM (Object-Relational Mapping) come Hibernate per fornire l'implementazione concreta
+della specifica JPA.
+
+
+JPA = è uno strumento (o specifica Java) che permette di mappare gli oggetti nel DB in maniera trasparente.
+Questo strumento consiste nell'uso di alcune annotations che collegano gli ogetti Java alle tabelle del DB.
